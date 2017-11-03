@@ -127,6 +127,11 @@
   <ItemGroup>
     <Folder Include="ViewControllers\" />
   </ItemGroup>
-  <Import Project="..\devfest_2017\devfest_2017.projitems" Label="Shared" Condition="Exists('..\devfest_2017\devfest_2017.projitems')" />
+  <ItemGroup>
+    <ProjectReference Include="..\devfest_2017.Core\devfest_2017.Core.csproj">
+      <Project>{9C4B1777-F318-41D9-AFF2-08CC53709076}</Project>
+      <Name>devfest_2017.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
